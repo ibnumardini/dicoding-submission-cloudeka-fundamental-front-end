@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BacaBuku App</title>
+  </head>
+  <body>
+    <header id="home">
+      <span class="header__logo">Baca<span>Buku</span></span>
+      <nav>
+        <ul role="list">
+          <li><a href="#home" class="menu">Home</a></li>
+          <li><a href="#latest-book" class="menu">Terbaru</a></li>
+          <li><a href="#programming-book" class="menu">Programming</a></li>
+          <li><a href="#about" class="menu">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <main>
+        <div class="content">
+          <article id="content__jumbotron">
+            <h1>Ayo kita baca <span>buku</span>.</h1>
+            <p>
+              Pengetahuan yang kamu peroleh dari media-media selain buku sama
+              halnya kopi instan. Sudah diatur sedemikian rupa agar bisa
+              dinikmati semua orang. Namun, hal itu bukan pengetahuan mendalam
+              dan lengkap. Informasi yang kamu peroleh tidak terorganisasi
+              secara rapi dan lengkap seperti kegunaan buku.
+            </p>
+          </article>
+          <list-book id="latest-book"></list-book>
+          <list-book id="programming-book"></list-book>
+        </div>
+        <aside id="about">
+          <h1>About</h1>
+          <span class="avatar">
+            <img
+              src="<%= require('./images/avatar.jpeg') %>"
+              alt="avatar.jpeg"
+            />
+          </span>
+          <ul role="list">
+            <li>Muhammad Fatkurozi</li>
+          </ul>
+        </aside>
+      </main>
+      <footer>
+        Made with ❤️ & ☕️ by Muhammad Fatkurozi &copy; 2022 - All Right
+        Reserved.
+      </footer>
+    </div>
+  </body>
+</html>
