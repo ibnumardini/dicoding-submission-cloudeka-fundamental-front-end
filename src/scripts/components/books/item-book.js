@@ -13,8 +13,8 @@ class ItemBook extends HTMLElement {
     this.#authors = authors;
     this.#url = url;
 
-    const newSubtitle = subtitle.slice(0, 55) + "...";
-    this.#subtitle = subtitle.length > 55 ? newSubtitle : subtitle;
+    const pluckSub = subtitle.slice(0, 55);
+    this.#subtitle = subtitle.length > 55 ? `${pluckSub}...` : subtitle;
 
     this.render();
   }
